@@ -31,7 +31,7 @@ Another consideration is where the pipeline will run. I propose using the HPC sy
 
 * The MiSeq machine is networked, so data can be directly uploaded to the HPC systems.
 
-* The aahl-02.cdc.it.csiro.au machine was created for another project but could also be used here. It doesn't have huge compute power but it probably ok in most cases.
+* The aahl-02.cdc.it.csiro.au machine was created for another project but could also be used here. It doesn't have huge compute power but is probably ok in most cases.
 
 * If we happen to have larger data, the Pearcey and Bracewell servers can also 'see' the Bowen storage location and can be used for analysis.
 
