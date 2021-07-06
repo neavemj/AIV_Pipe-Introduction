@@ -17,13 +17,27 @@ A potential pipeline structure is below. Each person can work on a seperate 'mod
 
 * As well as a report tailored towards clients, we may also need to generate a second report for laboratory staff that contains detailed QC information, etc., that may not be of interest to clients. This report could be in html format for better interactivity.
 
-* Analysis of the cleavage site needs to indicate a *high* pathogentic or *low* pathogenic sequence
+* Analysis of the cleavage site needs to indicate a *high* pathogentic or *low* pathogenic sequence.
 
     * We could also compare new cleavage sequences to all other sequences we have recovered (or even on NCBI) and report if the cleavage site is novel or where else it has been seen. 
 
 * The QC module will indicate data quality, depth of coverage, etc., and if the data is suitable for reporting. Note a regular occurance is that we only get partial genomes where only a few segments are complete. This is still useful information for reporting, particularly if the full HA segment is recovered.
 
-* IRMA is an assembly program from the CDC that Ivano has been using with generally good results. However, the coverage does need to high enough otherwise IRMA can produce misassembles.
+* IRMA is an assembly program from the CDC that Ivano has been using with generally good results. However, the coverage does need to be high enough otherwise IRMA can produce misassembles.
+
+Another consideration is where the pipeline will run. I propose using the HPC systems and a bowen instance that I've already created as below.
+
+![modules](images/hardware_flow.png)
+
+* The MiSeq machine is networked, so data can be directly uploaded to the HPC systems.
+
+* The aahl-02.cdc.it.csiro.au machine was created for another project but could also be used here. It doesn't have huge compute power but it probably ok in most cases.
+
+* If we happen to have larger data, the Pearcey and Bracewell servers can also 'see' the Bowen storage location and can be used for analysis.
+
+
+
+
 
 
 
