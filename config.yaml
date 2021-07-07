@@ -1,0 +1,48 @@
+## -------------- project specific parameters to be changed -------------- ##
+
+samples:
+  S21-02023-01:
+    - ./raw_data/21-02023-01_S4_L001_R1_001.fastq.gz
+    - ./raw_data/21-02023-01_S4_L001_R2_001.fastq.gz
+
+  S21-02023-03:
+    - ./raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
+    - ./raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
+
+
+## -------------- pipeline parameters -------------- ##
+
+# -------------- Trimming -------------- #
+
+# Trimmomatic is used for trimming the sequencing reads
+# The program requires an adapter file specific for the sequencing run
+# and a minimum quality score can be given
+
+trimmomatic_adapters: "./config/NexteraPE-PE.fa"
+trimmomatic_quality: 20
+trimmomatic_minlen: 50
+
+
+## -------------- Location of databases -------------- ##
+
+
+blast_nt: "/data/bioref/blast/ncbi/nt"
+blast_nr: "/data/bioref/blast/ncbi/nr"
+
+diamond_nr: "/data/bioref/diamond_db/nr.dmnd"
+
+
+## -------------- Pipline data structure -------------- ##
+
+# this allows the user to change folder names easily
+# include the final forward slash in dir name
+
+program_dir: "/datasets/work/aahl-pdngs/work/AIV_pipeline/"
+
+sub_dirs:
+  trim_dir: "01_preprocessing"
+  assembly_dir: "02_IRMA_assembly"
+  annotation_dir: "03_annotation"
+  phylogenetics_dir: "04_phylogenetics"
+  qc_dir: "05_quality_control"
+  reporting_dir: "06_report"
