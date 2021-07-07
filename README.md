@@ -5,7 +5,7 @@ The AIV pipeline will take **raw Illumina MiSeq data** of avain influenza sample
 
 **Influenza sample data is available for testing in the raw_data folder of this repository.**
 
-    * The raw data contains a sample where the complete genome was recovered and a sample where only a partial genome was recovered. Both the raw MiSeq fastq files and the manually assembled genomes are available. There is also a sequencing report for one of the samples in the folder.
+* The raw data contains a sample where the complete genome was recovered and a sample where only a partial genome was recovered. Both the raw MiSeq fastq files and the manually assembled genomes are available. There is also a sequencing report for one of the samples in the folder.
 
 A potential pipeline structure is below. **Please feel free to modify or comment on the structure.** These are just Matt's initial thoughts.
 
