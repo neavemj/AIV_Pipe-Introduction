@@ -9,7 +9,7 @@ The AIV pipeline will take **raw Illumina MiSeq data** of avain influenza sample
 
 A potential pipeline structure is below. **Please feel free to modify or comment on the structure.** These are just Matt's initial thoughts.
 
-Each person can work on a seperate 'module' with defined inputs and outputs, thereby not relying on other parts of the pipeline. Once we decide who is going to work on particular modules, that person can 'git clone' the specific repository and work independantly. Probably best if only one person at a time works on a module, otherwise we'll get merge errors, etc.
+Each person can work on a seperate snakemake 'module' with defined inputs and outputs, thereby not relying on other parts of the pipeline. Once we decide who is going to work on particular modules, that person can 'git clone' the specific repository and work independantly. Probably best if only one person at a time works on a module, otherwise we'll get merge errors, etc.
 
 ![modules](images/module_flow.png)
 
