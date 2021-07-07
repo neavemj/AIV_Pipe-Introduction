@@ -1,17 +1,19 @@
 # AIV Pipeline Introduction
 ---
 
-The AIV pipeline will take **raw Illumina MiSeq data** of avain influenza samples and produce a **word document** report suitable for sending to external clients. This requires a number of automated steps including trimming and quality control, influenza genome assembly, alignments and cleavage site identification, phylogenetic tree building, and final generation of the report.
+The AIV pipeline will take **raw Illumina MiSeq data** of avain influenza samples and produce a **word document** report suitable for sending to external clients. This requires a number of automated steps including trimming and quality control, influenza genome assembly, alignments and cleavage site identification, phylogenetic tree building and final generation of the report.
 
-**Please feel free to modify or comment on the below.** These are just Matt's initial thoughts and might not be the best way to structure the pipeline.
+**Influenza sample data is available for testing in the raw_data folder of this repository.**
 
-A potential pipeline structure is below. Each person can work on a seperate 'module' with defined inputs and outputs, thereby not relying on other parts of the pipeline. Once we decide who is going to work on particular modules, that person can 'git clone' the specific repository and work independantly. Probably best if only one person at a time works on a module, otherwise we'll get merge errors, etc.
+    * The raw data contains a sample where the complete genome was recovered and a sample where only a partial genome was recovered. Both the raw MiSeq fastq files and the manually assembled genomes are available. There is also a sequencing report for one of the samples in the folder.
+
+A potential pipeline structure is below. **Please feel free to modify or comment on the structure.** These are just Matt's initial thoughts.
+
+Each person can work on a seperate 'module' with defined inputs and outputs, thereby not relying on other parts of the pipeline. Once we decide who is going to work on particular modules, that person can 'git clone' the specific repository and work independantly. Probably best if only one person at a time works on a module, otherwise we'll get merge errors, etc.
 
 ![modules](images/module_flow.png)
 
 * Please see the repositories of each module for specific input and output requirements. 
-
-* Raw MiSeq data of influenza samples is available in the raw_data folder for testing.
 
 * The word document report will contain all figures, tables, captions, etc., but only *preliminary* interpretation statements. It is expected that laboratory staff will open the automatically generated word document and add interpretation / check outputs accordingly.
 
