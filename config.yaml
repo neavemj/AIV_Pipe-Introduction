@@ -2,12 +2,12 @@
 
 samples:
   S21-02023-01:
-    - ../../introduction/raw_data/21-02023-01_S4_L001_R1_001.fastq.gz
-    - ../../introduction/raw_data/21-02023-01_S4_L001_R2_001.fastq.gz
+    - ../introduction/raw_data/21-02023-01_S4_L001_R1_001.fastq.gz
+    - ../introduction/raw_data/21-02023-01_S4_L001_R2_001.fastq.gz
 
   S21-02023-03:
-    - ../../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
-    - ../../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
+    - ../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
+    - ../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
 
 
 ## -------------- pipeline parameters -------------- ##
@@ -18,7 +18,7 @@ samples:
 # The program requires an adapter file specific for the sequencing run
 # and a minimum quality score can be given
 
-trimmomatic_adapters: "./config/NexteraPE-PE.fa"
+trimmomatic_adapters: "NexteraPE-PE.fa"
 trimmomatic_quality: 20
 trimmomatic_minlen: 50
 
@@ -37,7 +37,7 @@ diamond_nr: "/data/bioref/diamond_db/nr.dmnd"
 # this allows the user to change folder names easily
 # include the final forward slash in dir name
 
-program_dir: "/home/nea040/Desktop/AIV_pipeline/"
+program_dir: "/mnt/c/Users/nea040/Desktop/AIV_pipeline/"
 
 sub_dirs:
   trim_dir: "01_preprocessing"
