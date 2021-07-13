@@ -18,8 +18,6 @@ configfile: "config.yaml"
 # want to import all of the rules no matter where the program is installed
 # this should work if we keep the filenames the same
 
-rules_dir = os.path.join(os.path.expanduser(config["program_dir"]), "rules")
-
 include: os.path.join(os.path.expanduser(config["program_dir"]), "/preprocessing/rules/preprocessing.smk")
 include: os.path.join(os.path.expanduser(config["program_dir"]), "/irma_assembly/rules/irma_assembly.smk")
 include: os.path.join(os.path.expanduser(config["program_dir"]), "/annotation/rules/annotation.smk")
