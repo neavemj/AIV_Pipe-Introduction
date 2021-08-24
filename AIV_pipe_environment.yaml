@@ -1,0 +1,20 @@
+name: AIV_pipe
+channels:
+    - bioconda
+    - r
+dependencies:
+    - trimmomatic=0.39
+    - irma=1.0.2
+    - mafft=7.487
+    - iqtree=2.1.4
+    
+    - bioconductor-ggtree
+    - r-knitr
+    - r-dplyr
+    - r-officer
+    - r-officedown
+    - r-ggmsa
+    - r-yaml
+    - r-flextable
+    - r-optparse
+    
