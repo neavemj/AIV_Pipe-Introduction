@@ -18,4 +18,5 @@ dependencies:
     - r-yaml
     - r-flextable
     - r-optparse
+    - r-phangorn
     

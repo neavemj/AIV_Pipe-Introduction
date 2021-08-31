@@ -22,6 +22,10 @@ trimmomatic_adapters: "NexteraPE-PE.fa"
 trimmomatic_quality: 20
 trimmomatic_minlen: 50
 
+# -------------- IRMA assembly -------------- #
+
+irma_module: FLU-avian
+
 
 ## -------------- Location of databases -------------- ##
 
@@ -37,7 +41,7 @@ diamond_nr: "/data/bioref/diamond_db/nr.dmnd"
 # this allows the user to change folder names easily
 # include the final forward slash in dir name
 
-program_dir: "/mnt/c/Users/nea040/Desktop/AIV_pipeline/"
+program_dir: "/flush5/nea040/AIV_pipeline/"
 
 sub_dirs:
   trim_dir: "01_preprocessing"
