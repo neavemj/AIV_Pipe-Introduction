@@ -6,6 +6,8 @@ channels:
 dependencies:
     - snakemake
     - trimmomatic=0.39
+    - porechop
+    - nanofilt
     - irma=1.0.2
     - mafft=7.487
     - iqtree=2.1.4
