@@ -19,7 +19,7 @@ configfile: "config.yaml"
 # this should work if we keep the filenames the same
 
 include: os.path.join(os.path.expanduser(config["program_dir"]), "preprocessing/rules/preprocessing.smk")
-include: os.path.join(os.path.expanduser(config["program_dir"]), "irma_assembly/rules/irma_assembly.smk")
+include: os.path.join(os.path.expanduser(config["program_dir"]), "irma_assembly/rules/irma_assembly_pipe.smk")
 include: os.path.join(os.path.expanduser(config["program_dir"]), "annotation/rules/annotation.smk")
 include: os.path.join(os.path.expanduser(config["program_dir"]), "phylogenetics/rules/phylogenetics.smk")
 include: os.path.join(os.path.expanduser(config["program_dir"]), "qc/rules/qc.smk")
