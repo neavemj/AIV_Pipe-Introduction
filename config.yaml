@@ -1,11 +1,15 @@
 ## -------------- project specific parameters to be changed -------------- ##
 
+# the sample name should be the SAN
+# the SAN needs to be written exactly as it appears in sample manager
+# because it used to look up information on the sample
+
 samples:
-  S21-02023-01:
+  21-02023-01:
     - ../introduction/raw_data/21-02023-01_S4_L001_R1_001.fastq.gz
     - ../introduction/raw_data/21-02023-01_S4_L001_R2_001.fastq.gz
 
-  S21-02023-03:
+  21-02023-03:
     - ../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
     - ../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
 
