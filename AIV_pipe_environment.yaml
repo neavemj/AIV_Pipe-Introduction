@@ -22,4 +22,4 @@ dependencies:
     - r-flextable
     - r-optparse
     - r-phangorn
-    
+    - r-rcpp

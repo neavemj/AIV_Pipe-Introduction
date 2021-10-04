@@ -4,6 +4,8 @@
 # the SAN needs to be written exactly as it appears in sample manager
 # because it used to look up information on the sample
 
+#Only run one sample at a time (delete if there are multiple)
+
 samples:
   21-02023-01:
     - ../introduction/raw_data/21-02023-01_S4_L001_R1_001.fastq.gz
@@ -64,3 +66,7 @@ diamond_nr: "/data/bioref/diamond_db/nr.dmnd"
 
 program_dir: "/flush5/nea040/AIV_pipeline/"
 
+## -------------- Final report location -------------- ##
+# Where the final report is intended to be saved
+
+output_dir: "/flush5/sco308/aiv_pipeline/Test_Run1/"
