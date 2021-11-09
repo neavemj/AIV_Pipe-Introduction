@@ -7,11 +7,11 @@
 #Only run one sample at a time (delete if there are multiple)
 
 samples:
-  21-02023-01:
+  21-02023-0001:
     - ../introduction/raw_data/21-02023-01_S4_L001_R1_001.fastq.gz
     - ../introduction/raw_data/21-02023-01_S4_L001_R2_001.fastq.gz
 
-  21-02023-03:
+  21-02023-0003:
     - ../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
     - ../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
 
