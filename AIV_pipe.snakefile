@@ -28,4 +28,4 @@ include: os.path.join(os.path.expanduser(config["program_dir"]), "reporting/rule
 
 rule all:
     input:
-        "report01.docx"
+        "report.docx"
