@@ -7,13 +7,21 @@
 #Only run one sample at a time (delete if there are multiple)
 
 samples:
-  21-02023-0001:
-    - ../introduction/raw_data/21-02023-01_S4_L001_R1_001.fastq.gz
-    - ../introduction/raw_data/21-02023-01_S4_L001_R2_001.fastq.gz
+  # H5
+  #s21-02023-01:
+  #  - ../introduction/raw_data/21-02023-01_S4_L001_R1_001.fastq.gz
+  #  - ../introduction/raw_data/21-02023-01_S4_L001_R2_001.fastq.gz
 
-  21-02023-0003:
+  # H7
+  21-02023-03:
     - ../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
     - ../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
+  
+  3 H7
+  20-02662-11:
+    - ../introduction/raw_data/20-02662-11_S2_L001_R1_001.fastq.gz
+    - ../introduction/raw_data/20-02662-11_S2_L001_R2_001.fastq.gz
+
 
 
 ## -------------- pipeline parameters -------------- ##
@@ -56,8 +64,11 @@ api_key: ""
 
 blast_nt: "/data/bioref/blast/ncbi/nt"
 blast_nr: "/data/bioref/blast/ncbi/nr"
+blast_flu: "/flush5/nea040/AIV_pipeline/db/influenza_A_genbank.fasta"
 
 diamond_nr: "/data/bioref/diamond_db/nr.dmnd"
+
+
 
 
 ## -------------- Pipline install location -------------- ##
@@ -66,7 +77,3 @@ diamond_nr: "/data/bioref/diamond_db/nr.dmnd"
 
 program_dir: "/flush5/nea040/AIV_pipeline/"
 
-## -------------- Final report location -------------- ##
-# Where the final report is intended to be saved
-
-output_dir: "/flush5/sco308/aiv_pipeline/Test_Run1/"
