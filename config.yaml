@@ -17,7 +17,7 @@ samples:
     - ../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
     - ../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
   
-  3 H7
+  # H7
   20-02662-11:
     - ../introduction/raw_data/20-02662-11_S2_L001_R1_001.fastq.gz
     - ../introduction/raw_data/20-02662-11_S2_L001_R2_001.fastq.gz
