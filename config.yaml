@@ -3,22 +3,24 @@
 # the sample name should be the SAN
 # the SAN needs to be written exactly as it appears in sample manager
 # because it used to look up information on the sample
+# including with the correct number of zeros
+# ie., 21-02023-0001 will work but not 21-02023-01
 
 #Only run one sample at a time (delete if there are multiple)
 
 samples:
   # H5
-  #s21-02023-01:
+  #21-02023-0001:
   #  - ../introduction/raw_data/21-02023-01_S4_L001_R1_001.fastq.gz
   #  - ../introduction/raw_data/21-02023-01_S4_L001_R2_001.fastq.gz
 
   # H7
-  21-02023-03:
+  21-02023-0003:
     - ../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
     - ../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
   
   # H7
-  20-02662-11:
+  20-02662-0011:
     - ../introduction/raw_data/20-02662-11_S2_L001_R1_001.fastq.gz
     - ../introduction/raw_data/20-02662-11_S2_L001_R2_001.fastq.gz
 
