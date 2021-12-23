@@ -70,7 +70,7 @@ blast_flu: "/flush5/nea040/AIV_pipeline/db/influenza_A_genbank.fasta"
 
 diamond_nr: "/data/bioref/diamond_db/nr.dmnd"
 
-
+cleavage_sites: "/flush5/nea040/AIV_pipeline/db/extended_info.csv"
 
 
 ## -------------- Pipline install location -------------- ##
