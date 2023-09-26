@@ -1,5 +1,6 @@
 name: AIV_pipe
 channels:
+    - anaconda
     - bioconda
     - r
     - conda-forge
@@ -13,6 +14,7 @@ dependencies:
     - iqtree=2.1.4
     - bioconductor-ggtree
     - blast>=2.9.0 
+    - graphviz
     - r-kableextra
     - r-tidyverse
     - r-knitr

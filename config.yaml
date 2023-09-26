@@ -69,5 +69,5 @@ cleavage_sites: "/flush5/nea040/AIV_pipeline/db/extended_info.csv"
 
 # This needs to be changed to where the pipeline is installed
 
-program_dir: "/datasets/work/aahl-pdngs/work/pipelines/AIV_pipeline"
+program_dir: "/datasets/work/aahl-pdngs/work/pipelines/AIV_pipeline/"
 
