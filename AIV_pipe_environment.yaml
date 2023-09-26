@@ -11,8 +11,10 @@ dependencies:
     - irma=1.0.2
     - mafft=7.487
     - iqtree=2.1.4
-    
     - bioconductor-ggtree
+    - blast>=2.9.0 
+    - r-kableextra
+    - r-tidyverse
     - r-knitr
     - r-dplyr
     - r-officer

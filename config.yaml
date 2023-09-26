@@ -4,22 +4,15 @@
 # the SAN needs to be written exactly as it appears in sample manager
 # because it used to look up information on the sample
 # including with the correct number of zeros
-# ie., 21-02023-0001 will work but not 21-02023-01
+# ie., 21-02023-0001 will work but 21-02023-01 will not work
 
-#Only run one sample at a time (delete if there are multiple)
+# Example samples and paths are below
+# Change these to your particular samples
 
 samples:
-  # H5
-  #21-02023-0001:
-  #  - ../introduction/raw_data/21-02023-01_S4_L001_R1_001.fastq.gz
-  #  - ../introduction/raw_data/21-02023-01_S4_L001_R2_001.fastq.gz
-
-  # H7
   21-02023-0003:
     - ../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
     - ../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
-  
-  # H7
   20-02662-0011:
     - ../introduction/raw_data/20-02662-11_S2_L001_R1_001.fastq.gz
     - ../introduction/raw_data/20-02662-11_S2_L001_R2_001.fastq.gz
@@ -61,6 +54,8 @@ san_query_endpoint: "https://mars.csiro.au/xseqcore-api/sanquery/jobdetails"
 
 api_key: ""
 
+blast_email: ""
+
 ## -------------- Location of databases -------------- ##
 
 
@@ -77,5 +72,5 @@ cleavage_sites: "/flush5/nea040/AIV_pipeline/db/extended_info.csv"
 
 # This needs to be changed to where the pipeline is installed
 
-program_dir: "/flush5/nea040/AIV_pipeline/"
+program_dir: "/scratch3/nea040/AIV_pipeline/"
 
