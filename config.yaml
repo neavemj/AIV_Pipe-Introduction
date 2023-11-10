@@ -9,12 +9,14 @@
 # Example samples and paths are below
 # Change these to your particular samples
 
-samples:
-  21-02023-0003:
-    - ../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
-    - ../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
+
+raw_dir: "raw_data"
 
 
+#samples:
+#  21-02023-0003:
+#    - ../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
+#    - ../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
 
 ## -------------- pipeline parameters -------------- ##
 
@@ -38,7 +40,7 @@ nanofilt_quality: 10
 # important that the correct module is specified here
 # either "FLU-avian" or "FLU-minion"
 
-irma_module: FLU-avian
+irma_module: FLU-minion
 
 
 # -------------- SAN query parameters -------------- #
@@ -69,5 +71,5 @@ cleavage_sites: "/flush5/nea040/AIV_pipeline/db/extended_info.csv"
 
 # This needs to be changed to where the pipeline is installed
 
-program_dir: "/datasets/work/aahl-pdngs/work/pipelines/AIV_pipeline/"
+program_dir: "/scratch3/nea040/AIV_pipe_dev/"
 
