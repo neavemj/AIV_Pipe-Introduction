@@ -5,18 +5,14 @@
 # because it used to look up information on the sample
 # including with the correct number of zeros
 # ie., 21-02023-0001 will work but 21-02023-01 will not work
+# The files in the directory need to have the following endings:
+# "_L001_R1_001.fastq.gz" for Illumina or "fastq.gz" for MinION
 
-# Example samples and paths are below
-# Change these to your particular samples
-
+# Example directory name is below
+# Change this to your particular samples
 
 raw_dir: "raw_data"
 
-
-#samples:
-#  21-02023-0003:
-#    - ../introduction/raw_data/21-02023-03_S6_L001_R1_001.fastq.gz
-#    - ../introduction/raw_data/21-02023-03_S6_L001_R2_001.fastq.gz
 
 ## -------------- pipeline parameters -------------- ##
 
@@ -71,5 +67,5 @@ cleavage_sites: "/flush5/nea040/AIV_pipeline/db/extended_info.csv"
 
 # This needs to be changed to where the pipeline is installed
 
-program_dir: "/scratch3/nea040/AIV_pipe_dev/"
+program_dir: "/datasets/work/aahl-pdngs/work/pipelines/AIV_pipeline/"
 
